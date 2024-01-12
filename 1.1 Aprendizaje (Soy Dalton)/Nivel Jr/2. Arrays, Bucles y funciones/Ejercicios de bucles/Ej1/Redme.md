@@ -1,0 +1,1 @@
+Hacer un programa que obtiene el promedio de los numeros que estan dentro de un arreglo

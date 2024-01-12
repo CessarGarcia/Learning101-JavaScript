@@ -1,0 +1,30 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: repeat(4,minmax(min-content,max-content));
+    grid-auto-rows: 50px;
+    justify-content: center;
+}
+
+.div-item{
+    padding: 20px;
+    border: 1px solid #a3e;
+    margin: 20px;
+}
+
+.btn_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-confirm{
+    background-color: rgb(17, 218, 17);
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    display: block;
+    width: 20%;
+}

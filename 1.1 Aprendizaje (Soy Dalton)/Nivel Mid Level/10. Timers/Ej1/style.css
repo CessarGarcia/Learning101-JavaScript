@@ -1,0 +1,43 @@
+h1{
+    color: #000;
+    text-align: center;
+}
+
+input{
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px !important;
+}
+
+input[type="submit"]{
+    background-color: rgb(16, 94, 196);
+    color: #fff;
+    border-radius: 20px;
+    border-color: #f5deb3;
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+}
+
+label{
+    font-size: 20px;
+}
+
+form{
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.resultado{
+    text-align: center;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}

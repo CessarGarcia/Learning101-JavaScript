@@ -1,0 +1,185 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+}
+
+body {
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+}
+
+.contenedor article {
+	line-height: 28px;
+}
+
+.contenedor article h1 {
+	font-size: 30px;
+	text-align: left;
+	padding: 50px 0;
+}
+
+.contenedor article p {
+	margin-bottom: 20px;
+}
+
+.contenedor article .btn-abrir-popup {
+	padding: 0 20px;
+	margin-bottom: 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+	border-radius: 3px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+
+.contenedor article .btn-abrir-popup:hover {
+	background: rgba(94,125,227, .9);
+}
+
+/*POPUP*/
+.overlay{
+    background: rgb(0, 0,0,.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+.popup{
+    background: #f8f8f8;
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,.3);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+
+    opacity: 0;
+    transition: .3s ease all;
+    transform: scale(0.150);
+}
+
+.btn-cerrar-popup{
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    transition: .3s ease all;
+
+}
+
+.btn-cerrar-popup:hover{
+    color: #000;
+    font-size: 25px;
+}
+
+.popup h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    opacity: 0;
+}
+
+.popup form .contenedor-inputs{
+    opacity: 0;
+}
+
+.popup form .contenedor-inputs input{
+    width: 70%;
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    text-align: center;
+    border: 1px solid #bbb;
+}
+
+.popup form .btn-submit{
+    background-color: rgba(0, 100, 239, 0.772);
+    color: #fff;
+    font-size: 30px;
+    margin-top: 15px;
+    padding: 5px 20px 40px 20px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat';
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.popup form .btn-submit:hover{
+    background-color: rgba(0, 191, 255, 0.794);
+    color: #000;
+    font-weight: bolder;
+}
+
+/*Animaciones*/
+.popup.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup.active h3{
+    animation: entradaTitulo 3s ease .1s forwards;
+}
+
+.popup.active .contenedor-inputs{
+    animation: entradaInputs .3s ease .6s forwards;
+}
+.popup.btn-submit{
+    animation: button 9s ease-out .5s forwards;
+}
+
+@keyframes entradaTitulo{
+    from{
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradaInputs {
+    form{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes button {
+    from{
+        transform: rotateZ(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: rotateZ(0);
+        opacity: 1;
+    }
+}

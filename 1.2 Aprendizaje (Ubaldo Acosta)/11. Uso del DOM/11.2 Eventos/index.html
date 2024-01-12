@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="entrar()">
+    <h1 onclick="cambiarTexto(this)">Manejo de Dom</h1>
+    <p id="titulo">Un parrafo simple</p>
+    <div id="mostrar"></div>
+    <button onclick="this.innerHTML = Date()">Mostrar hora</button>
+    <div onmouseover="this.style.backgroundColor='red'">myDiv</div>
+
+    <p id="lenguaje-navegador">Lenguaje del navegador: </p>
+    <div id="view"></div>
+
+    <form id="formulario">
+        <!-- Nombre: <input type="text" onchange="convertMayus(this)">
+        Apellido: <input type="text" name="" id="apellido" onfocus="cambiarFondo(this)" onblur="blanco(this)">
+        Nacionalidad: <input type="text" id="nacionalidad">
+        Edad: <input type="number" name="" id="edad"> -->
+
+        Nombre: <input type="text">
+        Apellido: <input type="text"  id="apellido">
+        Nacionalidad: <input type="text" id="nacionalidad">
+        Edad: <input type="number" id="edad">
+    </form>
+
+    <p id="titulo" onmouseover="rojo(this)" onmouseup="negro(this)">Evento onmouseout</p>
+    <button id="titulo" onmousedown="azul(this)" onmouseup="negro(this)">Evento onmousedown</button>
+    <script src="index.js"></script>
+</body>
+</html>

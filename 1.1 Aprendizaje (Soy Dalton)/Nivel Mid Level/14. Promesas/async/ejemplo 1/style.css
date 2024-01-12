@@ -1,0 +1,21 @@
+.materia {
+    background: #efefef;
+    border: #838080 solid 3px;
+    width: 60%;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.nota {
+    flex-basis: 20px;
+    background-color: #bebdbd;
+    padding: 15px;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+.nombre{
+    flex-grow: 1;
+}

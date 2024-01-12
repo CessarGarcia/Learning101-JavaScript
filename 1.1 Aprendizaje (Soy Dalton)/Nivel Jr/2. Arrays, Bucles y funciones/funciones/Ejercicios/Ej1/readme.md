@@ -1,0 +1,1 @@
+Preguntar si es mayor de edad, si lo es dejarlo pasar, el primero que entre después de las 2 am no paga
