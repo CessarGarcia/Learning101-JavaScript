@@ -13,21 +13,22 @@
    9. error handling
 
 [ ] Mid Level
-   10. Windows Object
-   11. browser tools
-   12. Events
-   13. Timers
-   14. Try-catch-finally
-   15. Obsolete in JS
-   16. callback
-   17. Promises
-   18. JSON
-   19. Get y post
-   20. Fetch
-   21. Axios
-  
-[ ] Projects 
+   1. Windows Object
+   2. Browser tools
+   3. Events
+   4. Timers
+   5. Try-catch-finally
+   6. Obsolete in JS
+   7. Callback
+   8. Promises
+   9. JSON
+   10. Get y Post
+   11. Fetch
+   12. Axios
+
+[ ] Projects
    1. Calculator
    2. Person Lists
    3. Clock
-   4. budget app
+   4. Budget App
+  
